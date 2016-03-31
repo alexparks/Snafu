@@ -5,6 +5,8 @@
  */
 package snafu;
 
+import environment.ApplicationStarter;
+
 /**
  *
  * @author Alex Parks
@@ -16,6 +18,7 @@ public class Snafu {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        ApplicationStarter.run("Snafu", new Arena());
     }
     
 }
