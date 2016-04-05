@@ -13,17 +13,21 @@ import java.awt.Point;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
 
+
+
+
 /**
  *
  * @author Alex Parks
  */
-class Arena extends Environment {
+class Arena extends Environment implements CellDataProviderIntf {
     
     private Grid grid;
 
     public Arena() {
         
         this.grid = new Grid(25, 25, 50, 50, new Point(100, 100), Color.BLACK);
+        // change bacckground color
         this.setBackground(Color.cyan);
     }
     
@@ -62,5 +66,27 @@ class Arena extends Environment {
         
 
     }
+
+    //<editor-fold defaultstate="collapsed" desc="CellDataProviderIntf">
+    @Override
+    public int getCellWidth() {
+        return grid.getCellWidth();
+    }
+    
+    @Override
+    public int getCellHeight() {
+        return grid.getCellHeight();
+    }
+    
+    @Override
+    public int getCellLocationX(int column, int row) {
+        return grid.getCellSystemCoordinate(column, row).x;
+    }
+    
+    @Override
+    public int getCellLocationY(int column, int row) {
+        return grid.getCellSystemCoordinate(column, row).y;
+    }
+//</editor-fold>
     
 }
