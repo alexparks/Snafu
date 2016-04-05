@@ -6,6 +6,7 @@
 package snafu;
 
 import environment.Environment;
+import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
@@ -17,6 +18,7 @@ import java.awt.event.MouseEvent;
 class Arena extends Environment {
 
     public Arena() {
+        this.setBackground(Color.cyan);
     }
 
     @Override
@@ -46,6 +48,7 @@ class Arena extends Environment {
 
     @Override
     public void paintEnvironment(Graphics graphics) {
+        
 
     }
     
