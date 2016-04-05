@@ -6,8 +6,10 @@
 package snafu;
 
 import environment.Environment;
+import grid.Grid;
 import java.awt.Color;
 import java.awt.Graphics;
+import java.awt.Point;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
 
@@ -16,10 +18,15 @@ import java.awt.event.MouseEvent;
  * @author Alex Parks
  */
 class Arena extends Environment {
+    
+    private Grid grid;
 
     public Arena() {
+        
+        this.grid = new Grid(25, 25, 50, 50, new Point(100, 100), Color.BLACK);
         this.setBackground(Color.cyan);
     }
+    
 
     @Override
     public void initializeEnvironment() {
@@ -48,6 +55,10 @@ class Arena extends Environment {
 
     @Override
     public void paintEnvironment(Graphics graphics) {
+        
+        if (grid != null) {
+            grid.paintComponent(graphics);
+        }
         
 
     }
