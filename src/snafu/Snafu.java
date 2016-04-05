@@ -25,6 +25,12 @@ public class Snafu {
 //        Killing another player
 //    Make it playable over the network?
 //        
+//    
+//    Ideas:
+//    Zombie bots
+//    Lives
+    
+    
 
     /**
      * @param args the command line arguments

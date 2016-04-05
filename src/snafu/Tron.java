@@ -18,6 +18,7 @@ public class Tron {
     //body, location, cell size, movement speed, color of the tron.
     
     private ArrayList<Point> body;
+    private CellDataProviderIntf cellData;
     
     
 }
