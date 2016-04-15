@@ -12,6 +12,25 @@ import environment.ApplicationStarter;
  * @author Alex Parks
  */
 public class Snafu {
+//    
+//    Things to do (ordered in most important to least important):
+//    Angles/diagonal movement
+//    Remove the tail on death
+//    Powerups:
+//        Change the size of the field
+//        Remove someones tail
+//    Make a scoring system:
+//        Time
+//        Somekind of item
+//        Killing another player
+//    Make it playable over the network?
+//        
+//    
+//    Ideas:
+//    Zombie bots
+//    Lives
+    
+    
 
     /**
      * @param args the command line arguments
