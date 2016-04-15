@@ -26,9 +26,9 @@ class Arena extends Environment implements CellDataProviderIntf {
 
     public Arena() {
         
-        this.grid = new Grid(25, 25, 50, 50, new Point(100, 100), Color.BLACK);
+        this.grid = new Grid(45, 25, 50, 50, new Point(100, 100), Color.BLACK);
         // change bacckground color
-        this.setBackground(Color.cyan);
+        this.setBackground(Color.CYAN);
     }
     
 
